@@ -1,0 +1,50 @@
+[
+  {
+    "id": "linen-tote",
+    "name": "Everyday Linen Tote",
+    "description": "A sturdy companion for your daily errands.",
+    "price": 24,
+    "emoji": "👜",
+    "color": "#efe1d2"
+  },
+  {
+    "id": "ceramic-mug",
+    "name": "Sunday Ceramic Mug",
+    "description": "Hand-finished, ready for slow mornings.",
+    "price": 18,
+    "emoji": "☕",
+    "color": "#e9e9dc"
+  },
+  {
+    "id": "desk-plant",
+    "name": "Little Desk Plant",
+    "description": "A cheerful green friend for your workspace.",
+    "price": 14,
+    "emoji": "🪴",
+    "color": "#dfe9dc"
+  },
+  {
+    "id": "soft-notebook",
+    "name": "Softcover Notebook",
+    "description": "For lists, sketches, and bright ideas.",
+    "price": 12,
+    "emoji": "📓",
+    "color": "#e5e0ed"
+  },
+  {
+    "id": "weekend-cap",
+    "name": "Weekend Cotton Cap",
+    "description": "An easy fit for sunny afternoons.",
+    "price": 22,
+    "emoji": "🧢",
+    "color": "#eee1e2"
+  },
+  {
+    "id": "little-vase",
+    "name": "Little Bud Vase",
+    "description": "A tiny home for one perfect flower.",
+    "price": 16,
+    "emoji": "🏺",
+    "color": "#e3e8ed"
+  }
+]

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple demo storefront built as a single-page app.">
+    <title>Little Market — Demo Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Little Market home">Little<span>Market</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Shop</a>
+        <a href="#about">About</a>
+      </nav>
+      <button class="cart-button" id="cart-toggle" type="button" aria-controls="cart-panel" aria-expanded="false">
+        Cart <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <p class="eyebrow">A small shop for good things</p>
+        <h1>Find something<br>to love.</h1>
+        <p>Thoughtful everyday objects, picked just for you.</p>
+        <a class="hero-link" href="#products">Explore the collection <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="catalog" id="products" aria-labelledby="products-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2 id="products-heading">Shop all</h2>
+          </div>
+          <p id="status" class="status" role="status">Loading products…</p>
+        </div>
+        <div id="product-grid" class="product-grid"></div>
+      </section>
+
+      <section class="about" id="about">
+        <p class="eyebrow">A demo storefront</p>
+        <h2>Small steps, real learning.</h2>
+        <p>This starter shop demonstrates a product catalogue and a browser-saved cart. It does not take orders or payments.</p>
+      </section>
+    </main>
+
+    <footer><span>Little Market</span><span>Learning project · No real purchases</span></footer>
+
+    <div id="cart-backdrop" class="cart-backdrop" hidden></div>
+    <aside id="cart-panel" class="cart-panel" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-heading">
+        <h2>Your cart</h2>
+        <button id="cart-close" class="icon-button" type="button" aria-label="Close cart">×</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <p class="cart-total">Subtotal <strong id="cart-total">$0.00</strong></p>
+        <button id="checkout-button" class="checkout-button" type="button">Demo checkout</button>
+        <p class="cart-note">Demo only — checkout is not connected.</p>
+      </div>
+    </aside>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
